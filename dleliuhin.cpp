@@ -13,8 +13,6 @@ std::string to_system( int num, int base )
 {
     assert( base >= 2 && base <= 16 );
 
-    bool is_negative = (num < 0) ? true : false;
-
     num = abs(num);
 
     string res;
@@ -28,7 +26,7 @@ std::string to_system( int num, int base )
         res += alphabet[remain];
     }
 
-    if (is_negative)
+    if (num < 0)
     {
         res += '-';
     }
