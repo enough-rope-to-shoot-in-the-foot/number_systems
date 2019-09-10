@@ -7,7 +7,7 @@
 using namespace std;
 
 // Можете использовать.
-static const char *alphabet = "0123456789ABCDEF";
+static const char *alphabet = "0123456789ABCDEFG";
 
 std::string to_system( int num, int base )
 {
